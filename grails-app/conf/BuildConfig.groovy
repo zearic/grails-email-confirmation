@@ -55,6 +55,13 @@ grails.project.dependency.resolution = {
         compile(':quartz:1.0.2')
 	    compile(':platform-core:1.0.0')
         compile(':mail:1.0.7')
-        runtime ":hibernate4:4.3.5.5"
+        runtime ":hibernate4:4.3.5.5"        
+
     }
 }
+
+// conf to publish to a private repo
+grails.project.repos.default = 'ciserver'
+grails.project.repos.ciserver.url = 'file:///var/lib/jenkins/.m2/repository'
+grails.project.repos.mabrouk.url = 'file:///home/mabrouk/.m2/repository'
+grails.project.repos.laure.url = 'file:///home/laure/.m2/repository'
